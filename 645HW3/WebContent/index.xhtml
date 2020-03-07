@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- This is the xhtml file for the Main Page which have 2 links for survey form and survey list -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="SurveyStyle.css" />
+</h:head>
+
+<h:body>
+
+	<h2>Welcome to the Student's Survey Page</h2>
+	<div class="credentials"></div>
+	<center>
+	<h:form>
+		<p:commandButton value="Survey Form" action="#{student.surveyPage}"
+			ajax="false" style="margin:10px" immediate="true" />
+		<p:commandButton value="Survey List" action="#{student.listSurveys}"
+			ajax="false" style="margin:10px" immediate="true" />
+	</h:form>
+	</center>
+
+</h:body>
+
+</html>
